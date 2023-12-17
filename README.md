@@ -13,10 +13,10 @@ The `cdk.json` file tells the CDK Toolkit how to execute your app.
 * `cdk diff`        compare deployed stack with current state
 * `cdk synth`       emits the synthesized CloudFormation template
 
-
-
-
 ## Resources:
+
+### AWS CDK Issues
+https://github.com/aws/aws-cdk/issues
 ### CDK Docs
 https://docs.aws.amazon.com/cdk/api/latest/docs/aws-construct-library.html
 ### Lambda NodeJS Construct
@@ -24,14 +24,15 @@ https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda_nodejs-readme
 ### CDK Coures Resources
 https://github.com/alexhddev/CDK-course-resources/commit/a5ac5de75e43100f88064602c033ccf3d497101d
 
-### CDK ChatGPT info on different levels of abstraction: 
+## CDK ChatGPT info on different levels of abstraction: 
 
 TypeScript code examples for interacting with AWS S3 buckets at different levels of abstraction using the AWS SDK for JavaScript (AWS SDK for JavaScript in Node.js). Ensure you have the aws-sdk package installed before running the code:
 
 ```
 npm install aws-sdk
 ```
-### Low-level abstraction:
+
+### Low-level abstraction (Level 1):
 
 ```
 import { S3 } from 'aws-sdk';
@@ -52,7 +53,7 @@ s3LowLevel('your_bucket_name', 'example_key.txt', 'Hello, AWS S3!');
 
 ```
 
-### Mid-level abstraction:
+### Mid-level abstraction (Level 2):
 
 
 ```
@@ -84,7 +85,7 @@ s3MidLevel.uploadObject('example_key.txt', 'Hello, AWS S3!');
 
 
 
-### High-level abstraction:
+### High-level abstraction (Level 3):
 
 
 ```
