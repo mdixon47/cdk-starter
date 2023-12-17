@@ -4,6 +4,7 @@ import { Construct } from 'constructs';
 import { Duration } from 'aws-cdk-lib/core';
 
 
+
 // Level 3 construct
 class L3Bucket extends Construct {
   constructor(scope: Construct, id: string, expiration: number) {
@@ -31,13 +32,19 @@ export class CdkStarterStack extends cdk.Stack {
       }
     })
 
+    
+
     // Level 2 construct (see readme for more info)
     new Bucket(this, "MyL2Bucket", {
         lifecycleRules: [{
           expiration: Duration.days(2)
         }]
     })
+
+    
     
     new L3Bucket(this, "MyL3Bucket", 3)
+
+    
   }
 }
