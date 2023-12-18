@@ -143,3 +143,27 @@ CloudFormation parameters allow you to provide input values that can be used thr
 CommaDelimitedList type.
 
 This allows dynamically configuring resources in the template based on the parameters provided. It is a best practice to make templates reusable by using parameters wherever hardcoded values are used.
+
+### Intrinsic Functions
+
+https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html
+
+Intrinsic functions allow you to dynamically configure resources in your template. They are evaluated at runtime and the results are substituted into the template. There are a few different intrinsic functions:
+
+- Fn::Base64: Returns the Base64 representation of the input string.
+- Fn::Cidr: Returns an array of CIDR address blocks.
+- Fn::FindInMap: Returns the value corresponding to keys in a two-level map.
+- Fn::GetAtt: Returns the value of an attribute from a resource in the template.
+- Fn::GetAZs: Returns a list of Availability Zones for the specified region.
+- Fn::ImportValue: Returns the value of an output exported by another stack.
+- Fn::Join: Joins a list of values with a delimiter.
+- Fn::Select: Returns a single object from a list of objects by index.
+- Fn::Split: Splits a string into a list of strings based on the specified delimiter.
+- Fn::Sub: Substitutes variables in an input string with values that you specify.
+- Ref: Returns the value of the specified parameter or resource.
+- Fn::Transform: Invokes a macro to perform custom processing on part of a stack template.
+- Condition Functions: Returns one value if the specified condition evaluates to true and another value if the specified condition evaluates to false.
+- Fn::ToJsonString: Returns a string representation of a JSON object.
+
+
+
