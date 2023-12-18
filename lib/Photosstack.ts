@@ -5,7 +5,7 @@ import * as cdk from 'aws-cdk-lib';
 import { Bucket, CfnBucket } from "aws-cdk-lib/aws-s3";
 import { Fn } from "aws-cdk-lib";
 
-export class PhotosStack extends cdk.Stack {
+export class PhotosStack extends cdk.Stack { 
 
     private stackSuffix: string;
 
