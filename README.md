@@ -166,4 +166,11 @@ Intrinsic functions allow you to dynamically configure resources in your templat
 - Fn::ToJsonString: Returns a string representation of a JSON object.
 
 
+### CDK Aspects
+
+CDK aspects: check or modify resources after they are created
+- Visitor pattern
+- Simple used case: add tags
+- Popular use case in for security or best practices
+
 
