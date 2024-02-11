@@ -171,6 +171,6 @@ Intrinsic functions allow you to dynamically configure resources in your templat
 CDK aspects: check or modify resources after they are created
 - Visitor pattern
 - Simple used case: add tags
-- Popular use case in for security or best practices
+- Popular use case in for security or best practices (like a code linter)
 
 
