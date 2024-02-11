@@ -3,7 +3,7 @@ import 'source-map-support/register';
 import * as cdk from 'aws-cdk-lib';
 import { PhotosStack } from '../lib/Photosstack';
 import { PhotosHandlerStack } from '../lib/PhotosHandlerStack';
-import { BucketTagger } from './tagger';
+import { BucketTagger } from './Tagger';
 
 
 const app = new cdk.App();
